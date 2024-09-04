@@ -1,0 +1,94 @@
+section.side-count{
+  display: none;
+  gap: 2.5rem;
+
+  & > div{
+    text-align: center;
+    & h4{
+      font: var(--label-lg);
+      text-transform: uppercase;
+      color: var(--content-prim);
+    }
+    & p{
+      font: var(--overline);
+      text-transform: uppercase;
+      color: var(--content-sec);
+    }
+  }
+
+  & button{
+    & i{
+      background-image: url(../../assets/Replay.svg);
+    }
+  }
+  & div.result {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    /* justify-content: center; */
+    min-height: 150px;
+    max-height: 300px;
+    padding: 1rem;
+    /* align-items: center; */
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    & h2 {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+  
+      font-family: var(--roboto-mono);
+      font-size: 3rem;
+      color: transparent;
+      height: 100px;
+      min-width: 100px;
+      width: auto;
+      position: relative;
+      animation: appearText 2.5s linear 1s both;
+    }
+    & h2::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100px;
+      width: 100%;
+
+      border-radius: 1.75rem;
+      animation: appearBox 3s linear;
+      z-index: -1;
+    }
+  }
+}
+
+
+@keyframes appearBox {
+  from{
+    transform: rotate(0deg);
+    background: var(--content-brand);
+    display: block;
+  }
+  to{
+    transform: rotate(1080deg);
+    background: transparent;
+    display: none;
+  }
+}
+
+@keyframes appearText {
+  from{
+    color: var(--color-inverse);
+  }
+  to{
+    color: var(--content-brand);
+  }
+}
+
+@media (width <= 40em) {
+  section.side-count{
+    & div.result {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}

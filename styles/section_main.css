@@ -1,0 +1,36 @@
+main{
+  display: flex;
+  justify-content: space-between;
+  gap: 6rem;
+  width: 80%;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+  align-items: center;
+
+  & .side-text{
+    display: grid;
+    gap: 3.25rem;
+    & > div{
+      & a{
+        font: var(--parag-md);
+        color: var(--content-brand);
+        text-decoration: none;
+      }
+      & p{
+        font: var(--parag-sm);
+      }
+    }
+  }
+}
+
+@media (width < 80em) {
+    main{
+      display: grid;
+
+    }
+}
+
+@media (width <= 40em) {
+
+}

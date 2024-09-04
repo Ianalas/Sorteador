@@ -1,0 +1,70 @@
+section.side-input{
+  display: grid;
+  gap: 2.5rem;
+  & > div{
+    display: block;
+    & h4{
+      font: var(--label-lg);
+      text-transform: uppercase;
+      color: var(--content-prim);
+    }
+    & p{
+      font: var(--parag-lg);
+    }
+  }
+  & div.capsula{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  & form{
+    display: grid;
+    gap: 2.5rem;
+
+    & fieldset{
+      display: flex;
+      border: none;
+      gap: .5rem .75rem;
+
+      & div{
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        gap: .75rem;
+        align-items: center;
+        
+        & label{
+          font: var(--label-md);
+          text-transform: uppercase;
+          color: #C7C9CC;
+          max-width: max-content;
+        }
+        & input[type="number"]{
+          border-radius: .5rem;
+          width: 6rem;
+          max-width: 10rem;
+          padding: .5rem .75rem;
+          text-align: center;
+          font: var(--display-sm);
+          background-color: var(--bg-sec);
+          color: var(--content-prim);
+          border: none;
+          outline: none;
+        }
+      }
+    }
+  }
+}
+
+@media (width <= 40em) {
+  section.side-input{
+    display: grid;
+    gap: 2.5rem;
+    & > div{
+      & p{
+        font: var(--parag-md);
+      }
+    }
+  }
+}
