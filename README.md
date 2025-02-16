@@ -37,7 +37,7 @@ Basta abrir o arquivo `index.html` no navegador de sua escolha.
 ## 📄 Funcionalidades
 
 - Definir um intervalo de números para o sorteio
-- Gerar um número aleatório dentro do intervalo
+- Gerar um ou vários números aleatórios dentro do intervalo desejado, podendo ser repetidos ou não
 - Interface simples e interativa
 - Responsividade para diferentes tamanhos de tela
 
@@ -45,17 +45,7 @@ Basta abrir o arquivo `index.html` no navegador de sua escolha.
 
 - Implementação de temas claro e escuro
 - Opção para salvar o histórico de sorteios
-- Integração com APIs para diferentes tipos de sorteios
 
-## 🤝 Contribuição
-
-Se desejar contribuir com melhorias, siga estes passos:
-
-1. Faça um fork do repositório
-2. Crie uma nova branch (`git checkout -b feature/nova-feature`)
-3. Commit suas alterações (`git commit -m 'Adicionando nova feature'`)
-4. Envie um push para a branch (`git push origin feature/nova-feature`)
-5. Abra um Pull Request
 
 ## 📝 Licença
 
